@@ -8,7 +8,7 @@ export default function Dashboard() {
   const [transactions, setTransactions] = useState([]);
 
   const fetchData = async () => {
-    const res = await axios.get("http://localhost:5000/api/transactions");
+    const res = await axios.get("https://expense-tracker-application-lcqc.onrender.com");
     setTransactions(res.data);
   };
 
@@ -17,12 +17,12 @@ export default function Dashboard() {
   }, []);
 
   const addTransaction = async (text, amount) => {
-    await axios.post("http://localhost:5000/api/transactions", { text, amount });
+    await axios.post("https://expense-tracker-application-lcqc.onrender.com", { text, amount });
     fetchData();
   };
 
   const deleteTransaction = async (id) => {
-    await axios.delete(`http://localhost:5000/api/transactions/${id}`);
+    await axios.delete(`https://expense-tracker-application-lcqc.onrender.com/${id}`);
     fetchData();
   };
 
