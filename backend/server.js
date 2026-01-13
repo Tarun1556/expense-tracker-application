@@ -1,3 +1,4 @@
+console.log("LOADING ROUTES:", require("fs").readdirSync("./routes"));
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
