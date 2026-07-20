@@ -142,4 +142,3 @@ ExpencesTracker/
 
 ## License
 
-ISC
