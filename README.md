@@ -104,7 +104,7 @@ Delete a transaction by ID.
 ## Project Structure
 
 ```
-ExpencesTracker/
+ExpensesTracker/
 ├── backend/
 │   ├── config/
 │   │   └── db.js
